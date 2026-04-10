@@ -39,6 +39,7 @@
             HistoryData = new DataGridView();
             History = new Label();
             Consbtn = new Button();
+            logoutbtn = new Button();
             ((System.ComponentModel.ISupportInitialize)HistoryData).BeginInit();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             Title.AutoSize = true;
             Title.Font = new Font("Sitka Subheading", 19.9384613F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Title.Location = new Point(50, 31);
+            Title.Location = new Point(64, 46);
             Title.Name = "Title";
             Title.Size = new Size(248, 52);
             Title.TabIndex = 7;
@@ -112,7 +113,7 @@
             // 
             GoalProgress.Location = new Point(23, 260);
             GoalProgress.Name = "GoalProgress";
-            GoalProgress.Size = new Size(296, 19);
+            GoalProgress.Size = new Size(327, 19);
             GoalProgress.TabIndex = 15;
             // 
             // HistoryData
@@ -121,7 +122,7 @@
             HistoryData.Location = new Point(23, 321);
             HistoryData.Name = "HistoryData";
             HistoryData.RowHeadersWidth = 56;
-            HistoryData.Size = new Size(296, 120);
+            HistoryData.Size = new Size(327, 120);
             HistoryData.TabIndex = 16;
             // 
             // History
@@ -146,11 +147,25 @@
             Consbtn.UseVisualStyleBackColor = false;
             Consbtn.Click += Consbtn_Click;
             // 
+            // logoutbtn
+            // 
+            logoutbtn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            logoutbtn.BackColor = Color.Turquoise;
+            logoutbtn.Font = new Font("Segoe UI", 7.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            logoutbtn.Location = new Point(297, 12);
+            logoutbtn.Name = "logoutbtn";
+            logoutbtn.Size = new Size(65, 31);
+            logoutbtn.TabIndex = 19;
+            logoutbtn.Text = "Log Out";
+            logoutbtn.UseVisualStyleBackColor = false;
+            logoutbtn.Click += logoutbtn_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(345, 450);
+            ClientSize = new Size(374, 450);
+            Controls.Add(logoutbtn);
             Controls.Add(Consbtn);
             Controls.Add(History);
             Controls.Add(HistoryData);
@@ -182,5 +197,6 @@
         private DataGridView HistoryData;
         private Label History;
         private Button Consbtn;
+        private Button logoutbtn;
     }
 }

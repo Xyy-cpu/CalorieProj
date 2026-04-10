@@ -35,6 +35,7 @@
             label1 = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
+            btnBackToLogin = new Button();
             SuspendLayout();
             // 
             // btnRegister
@@ -42,7 +43,7 @@
             btnRegister.BackColor = Color.DarkSlateGray;
             btnRegister.Font = new Font("Segoe UI", 7.753846F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnRegister.ForeColor = Color.Black;
-            btnRegister.Location = new Point(37, 272);
+            btnRegister.Location = new Point(52, 272);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(273, 46);
             btnRegister.TabIndex = 10;
@@ -53,7 +54,7 @@
             // Username
             // 
             Username.AutoSize = true;
-            Username.Location = new Point(37, 157);
+            Username.Location = new Point(52, 157);
             Username.Name = "Username";
             Username.Size = new Size(81, 21);
             Username.TabIndex = 9;
@@ -62,7 +63,7 @@
             // Password
             // 
             Password.AutoSize = true;
-            Password.Location = new Point(37, 213);
+            Password.Location = new Point(52, 213);
             Password.Name = "Password";
             Password.Size = new Size(76, 21);
             Password.TabIndex = 11;
@@ -72,7 +73,7 @@
             // 
             Title.AutoSize = true;
             Title.Font = new Font("Sitka Subheading", 19.9384613F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Title.Location = new Point(52, 35);
+            Title.Location = new Point(67, 35);
             Title.Name = "Title";
             Title.Size = new Size(248, 52);
             Title.TabIndex = 12;
@@ -82,7 +83,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Sitka Subheading", 9.969231F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(114, 87);
+            label1.Location = new Point(136, 87);
             label1.Name = "label1";
             label1.Size = new Size(117, 26);
             label1.TabIndex = 13;
@@ -90,23 +91,37 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(37, 181);
+            txtUsername.Location = new Point(52, 181);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(273, 29);
             txtUsername.TabIndex = 14;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(37, 237);
+            txtPassword.Location = new Point(52, 237);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(273, 29);
             txtPassword.TabIndex = 15;
+            // 
+            // btnBackToLogin
+            // 
+            btnBackToLogin.BackColor = Color.DimGray;
+            btnBackToLogin.Font = new Font("Segoe UI", 7.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnBackToLogin.ForeColor = SystemColors.ControlText;
+            btnBackToLogin.Location = new Point(136, 324);
+            btnBackToLogin.Name = "btnBackToLogin";
+            btnBackToLogin.Size = new Size(102, 31);
+            btnBackToLogin.TabIndex = 16;
+            btnBackToLogin.Text = "Login";
+            btnBackToLogin.UseVisualStyleBackColor = false;
+            btnBackToLogin.Click += btnBackToLogin_Click;
             // 
             // Registration
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(345, 450);
+            ClientSize = new Size(374, 450);
+            Controls.Add(btnBackToLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(label1);
@@ -129,5 +144,6 @@
         private Label label1;
         private TextBox txtUsername;
         private TextBox txtPassword;
+        private Button btnBackToLogin;
     }
 }

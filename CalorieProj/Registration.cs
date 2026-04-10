@@ -6,9 +6,9 @@ namespace CalorieProj
 {
     public partial class Registration : Form
     {
-        private Form loginForm; 
+        private Form loginForm;
 
-     
+
         public Registration(Form login)
         {
             InitializeComponent();
@@ -46,16 +46,16 @@ namespace CalorieProj
                 }
             }
 
-      
+
+
+        }
+
+
+        private void btnBackToLogin_Click(object sender, EventArgs e)
+        {
             loginForm.Show();
             this.Close();
         }
 
-   
-        private void btnBackToLogin_Click(object sender, EventArgs e)
-        {
-            loginForm.Show();
-            this.Close();     
-        }
     }
 }

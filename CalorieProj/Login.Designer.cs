@@ -41,7 +41,7 @@
             // Username
             // 
             Username.AutoSize = true;
-            Username.Location = new Point(28, 102);
+            Username.Location = new Point(51, 114);
             Username.Name = "Username";
             Username.Size = new Size(81, 21);
             Username.TabIndex = 0;
@@ -50,7 +50,7 @@
             // Password
             // 
             Password.AutoSize = true;
-            Password.Location = new Point(28, 170);
+            Password.Location = new Point(51, 170);
             Password.Name = "Password";
             Password.Size = new Size(76, 21);
             Password.TabIndex = 1;
@@ -58,14 +58,14 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(28, 126);
+            txtUsername.Location = new Point(51, 138);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(284, 29);
             txtUsername.TabIndex = 2;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(28, 194);
+            txtPassword.Location = new Point(51, 194);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(284, 29);
             txtPassword.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             btnLogin.BackColor = Color.DarkCyan;
             btnLogin.Font = new Font("Times New Roman", 8.861538F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogin.Location = new Point(51, 229);
+            btnLogin.Location = new Point(73, 229);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(244, 42);
             btnLogin.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             Title.AutoSize = true;
             Title.Font = new Font("Sitka Subheading", 19.9384613F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Title.Location = new Point(47, 25);
+            Title.Location = new Point(73, 30);
             Title.Name = "Title";
             Title.Size = new Size(248, 52);
             Title.TabIndex = 6;
@@ -95,7 +95,7 @@
             // Regis
             // 
             Regis.AutoSize = true;
-            Regis.Location = new Point(85, 274);
+            Regis.Location = new Point(108, 274);
             Regis.Name = "Regis";
             Regis.Size = new Size(165, 21);
             Regis.TabIndex = 7;
@@ -106,7 +106,7 @@
             btnRegister.BackColor = Color.DarkSlateGray;
             btnRegister.Font = new Font("Segoe UI", 7.753846F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btnRegister.ForeColor = Color.Black;
-            btnRegister.Location = new Point(124, 298);
+            btnRegister.Location = new Point(130, 298);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(102, 31);
             btnRegister.TabIndex = 8;
@@ -118,7 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(345, 450);
+            ClientSize = new Size(374, 450);
             Controls.Add(btnRegister);
             Controls.Add(Regis);
             Controls.Add(Title);

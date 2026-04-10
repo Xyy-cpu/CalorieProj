@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.VisualBasic.Logging;
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Tls;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -8,6 +10,7 @@ namespace CalorieProj
     public partial class Dashboard : Form
     {
         private int loggedInUserId;
+
 
         public Dashboard(int userId)
         {
@@ -104,7 +107,7 @@ namespace CalorieProj
                 object sumResult = sumCmd.ExecuteScalar();
                 totalCaloriesToday = sumResult != DBNull.Value ? Convert.ToInt32(sumResult) : 0;
 
-  
+
                 string goalQuery = "SELECT calorie_goal FROM users WHERE user_id=@user_id";
                 MySqlCommand goalCmd = new MySqlCommand(goalQuery, con);
                 goalCmd.Parameters.AddWithValue("@user_id", loggedInUserId);
@@ -117,5 +120,11 @@ namespace CalorieProj
             GoalProgress.Value = Math.Min(totalCaloriesToday, GoalProgress.Maximum);
         }
 
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            Form1 login = new Form1();
+            login.Show();
+            this.Close();
+        }
     }
 }
