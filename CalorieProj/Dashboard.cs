@@ -11,6 +11,11 @@ namespace CalorieProj
     {
         private int loggedInUserId;
 
+        public Dashboard()
+        {
+            InitializeComponent();
+        }
+
 
         public Dashboard(int userId)
         {
